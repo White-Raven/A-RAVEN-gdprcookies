@@ -28,4 +28,3 @@ But isn't ever loaded because, in the backend, there is a $gdprsettingtype = '2'
 
 So unless something goes very wrong and I need a fall back method, it won't ever be active again till the day it will be deleted. So I'm leaving it here for posterity.
 
-(note that the accompagnying html/php code has been simplifed to not included the live-site's toggleable capabilities.)
