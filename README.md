@@ -26,5 +26,7 @@ So... that script still exists on the website.
 But isn't ever loaded because, in the backend, there is a $gdprsettingtype = '2'; instead of a $gdprsettingtype = '1'; in one of the internal php files.
 
 
-So unless something goes very wrong and I need a fall back method, it won't ever be active again till the day it will be deleted. So I'm leaving it here for posterity.
+So unless something goes very wrong and I need a fall back method, it won't ever be active again till the day it will be deleted. 
 
+So I'm leaving it here for posterity!
+I'm not offering the php code for handling all that internally, but I'm willing to share the popup, with its interface and all, and the cookie-way of doing stuff.
