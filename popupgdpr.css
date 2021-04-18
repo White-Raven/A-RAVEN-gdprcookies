@@ -1,0 +1,134 @@
+.footer .container.grid.grid-3 {
+    overflow: inherit;
+}
+.Credits .CMSGDPR p {
+    margin-top: 0;
+    font-size: 10px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+#gdprPopup {
+    font-weight: 400;
+    font-size: smaller;
+}
+#gdprPopup p {
+    font-weight: 400;
+    font-size: smaller;
+}
+#gdprPopup a {
+    text-decoration: underline dotted;
+}
+
+.popupgdpr {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popupgdpr .popuptext {
+    opacity: 90%;
+    visibility: hidden;
+    width: fit-content;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -78px;
+    margin-right: -100px;
+}
+.popupgdpr .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent;
+}
+.popupgdpr .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.popupgdpr p.gdprbtn {
+  text-align: center;
+}
+.popupgdpr p.gdprbtn input{
+  padding: 5px 60px;
+}
+/*SWITCHES*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 21px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #4c1c8c;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
