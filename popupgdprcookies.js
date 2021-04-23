@@ -3,7 +3,7 @@ function popupgdprfunc() {
   popup.classList.toggle("show");
 }
 var cookiedays = "7";
-var cookiedomain= ".a-raven.corsica";
+var cookiedomain= ".YOURDOMAIN.IO"; //LEAVE THE DOT IN FRONT OF IT TO INCLUDE SUBDOMAINS
 	function createCookie(cookiename,cookievalue,cookiedays,cookiedomain) {
 		if (cookiedays) {
 			var date = new Date();
