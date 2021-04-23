@@ -9,7 +9,7 @@
 
                     	<h2>Data Collection</h2>
                     	<p>Some bullshit about data collection</p>
-                        <p>En utilisant les formulaires, vos données transitent de la même manière que lorsque vous envoyez un mail sur un client sécurisé sans collection.</p>
+                        <p>Some more</p>
                         <p></p>
                         <h2>Javascript</h2>
                         <p>Some bullshit about javascript scripts on the website</p>
@@ -78,7 +78,7 @@ if ($googleanalytics != '1') {
 }?>
 
                         <h2>Session</h2>
-                        <p>La gestion de session se fait en interne coté serveur via php8.0, sans données sortantes.</p>
+                        <p>PHP session and data related bullshit</p>
 <?php
 switch ($gdprsettingtype) {
     case '1':
