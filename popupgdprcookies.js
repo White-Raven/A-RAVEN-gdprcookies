@@ -3,7 +3,7 @@ function popupgdprfunc() {
   popup.classList.toggle("show");
 }
 var cookiedays = "7";
-var cookiedomain= ".YOURDOMAIN.IO"; //LEAVE THE DOT IN FRONT OF IT TO INCLUDE SUBDOMAINS
+var cookiedomain= "."+window.location.hostname;
 	function createCookie(cookiename,cookievalue,cookiedays,cookiedomain) {
 		if (cookiedays) {
 			var date = new Date();
@@ -47,8 +47,10 @@ document.querySelectorAll('.gdprswitch').forEach(item => {
     		  eraseCookie(cookiename);
     		  createCookie(cookiename,cookievalue,cookiedays,cookiedomain);
     		}
-
-
 		}
   });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('popupgdprfunc')
+    .addEventListener('click', popupgdprfunc);
 });
