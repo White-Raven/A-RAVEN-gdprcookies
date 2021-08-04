@@ -1,5 +1,5 @@
 <?php require_once( $_SERVER['DOCUMENT_ROOT'] ."/inc/check.php");?>
-                <div class="CMSGDPR popupgdpr" onclick="popupgdprfunc()"><p class="popupgdprclick">GDPR DATA COLLECTION AND COOKIES</p>
+                <div class="CMSGDPR popupgdpr" id="popupgdprfunc"><p class="popupgdprclick">GDPR DATA COLLECTION AND COOKIES</p>
                     <div class="popuptext" id="gdprPopup">
 <?php if ($gdprsettingtype == '2') { 
 ?>
